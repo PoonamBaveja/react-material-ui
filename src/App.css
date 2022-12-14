@@ -1,38 +1,97 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  color: rgb(14, 101, 173);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+  text-align: center;
+  color: #666;
+  letter-spacing: 3px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1{
+  text-align: center;
+  color: #c23f2d
+}
+.topSection{
+  background-color: #c23f2d;
+  height: 125px;
+  display: flex;
+}
+.logo{
+  width: 120px;
+  height: 106px;
+  margin: 10px 20px 0 10px;
+}
+h2{
+  color: #333;
+  margin-top: 25px;
+}
+h2 span{
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  line-height: 52px;
+}
+.logoHeaderWrapper{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.switchSearchWrapper{
+  width: calc(50% -  15px);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.accordionData{
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MuiTableContainer-root{
+  margin-bottom: 40px;
+  position:relative;
+  z-index: 99;
+}
+.MuiTable-root.tableWidth{
+  width: 55%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.MuiTable-root.tableWidth tr:nth-child(odd){
+  background-color: #e0cf9a;
+}
+.MuiTable-root.tableWidth tr:nth-child(even){
+  background-color: #e1debc;
+}
+.MuiTable-root.tableWidth tr td{
+  color: #333;
+  padding: 6px;
+  text-align: left;
+  width: 35%;
+  border: 1px solid #fff;
+}
+.MuiTable-root.tableWidth tr td:nth-child(2){
+  width: 30%;
+}
+.MuiAccordionSummary-expandIcon.MuiIconButton-root{
+  display: none;
+}
+.MuiAccordionSummary-root .MuiAccordionSummary-content{
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+.MuiAccordionSummary-root .MuiAccordionSummary-content.Mui-expanded{
+  margin-top: 0;
+}
+.MuiAccordionDetails-root p{
+    position: absolute;
+    width: 150px;
+    margin-top: -30px;
+    margin-left: 32px;
+    color: #999;
+    font-weight: 600;
 }
